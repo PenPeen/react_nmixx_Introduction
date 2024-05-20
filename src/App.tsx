@@ -1,7 +1,16 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 
+import IndexRoutes from '../routes';
+
 function App() {
-  return <>comming soon...</>;
+  return (
+    <>
+      <BrowserRouter>
+        <IndexRoutes />
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App;
