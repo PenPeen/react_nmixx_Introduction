@@ -35,6 +35,7 @@ Atomic Designを用いたコンポーネント管理とする
 
 - `<Member />`
 - `<PrevButton />`
+- `<TopButton />`
 
 ### Organisms
 
@@ -43,7 +44,7 @@ Atomic Designを用いたコンポーネント管理とする
 
 ### Templates
 
-- `<MembersFrame />`
+- `<Home />`
 
 ## ページデザイン（作成中）
 
