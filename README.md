@@ -27,6 +27,10 @@ CSS
 
 Atomic Designを用いたコンポーネント管理とする
 
+### Atoms
+
+- `<ProfileIcon />`
+
 ### Molecules
 
 - `<Member />`
