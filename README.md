@@ -44,3 +44,13 @@ Atomic Designを用いたコンポーネント管理とする
 ### Templates
 
 - `<MembersFrame />`
+
+## ページデザイン（作成中）
+
+### TOPページ
+
+![TOPページ](https://github.com/PenPeen/react_spa_nmixx_Introduction/blob/image/public/top_page.png?raw=true)
+
+### メンバー一覧ページ
+
+![メンバー一覧ページ](https://github.com/PenPeen/react_spa_nmixx_Introduction/blob/image/public/members_page.png?raw=true)
