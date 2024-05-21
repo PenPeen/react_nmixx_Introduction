@@ -1,3 +1,4 @@
+import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 
@@ -6,9 +7,11 @@ import IndexRoutes from '../routes';
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <IndexRoutes />
-      </BrowserRouter>
+      <HelmetProvider>
+        <BrowserRouter>
+          <IndexRoutes />
+        </BrowserRouter>
+      </HelmetProvider>
     </>
   );
 }
