@@ -26,7 +26,7 @@ export const members: Member[] = [
     position: 'リードボーカル',
     comment:
       '透き通るような歌声で多くのファンを魅了する存在。多くのオーディションを勝ち抜いた逸材。',
-    profile_img_path: '/sullyoon_profile.jpg',
+    profile_img_path: '/sullyoon_profile.jpeg',
   },
   {
     id: 4,
