@@ -1,8 +1,24 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import ProfileIcon from '@/components/atoms/ProfileIcon';
 import PrevButton from '@/components/molecules/PrevButton';
 import { members } from '@/data';
+
+const MemberLink = styled(Link)`
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    background-color: #e0e0e0; /* より目立つために濃い色 */
+    transform: translateY(-5px);
+    transition:
+      background-color 0.3s,
+      transform 0.3s,
+      box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* より効果的なシャドウを追加 */
+  }
+`;
 
 const Header = styled.h1`
   margin: 20px 0;
@@ -37,19 +53,21 @@ const Members: React.FC = () => {
       <PrevButton />
       <Header>members</Header>
       {members.map((member) => (
-        <MemberItem key={member.id}>
-          <ProfileIcon
-            image_path={member.profile_img_path}
-            width={75}
-            height={75}
-          />
+        <MemberLink key={member.id} to={`/members/${member.id}`}>
+          <MemberItem>
+            <ProfileIcon
+              image_path={member.profile_img_path}
+              width={75}
+              height={75}
+            />
 
-          <MemberDetails>
-            <MemberName>{member.name}</MemberName>
-            <MemberInfo>{member.age}歳</MemberInfo>
-            <MemberInfo>{member.position}</MemberInfo>
-          </MemberDetails>
-        </MemberItem>
+            <MemberDetails>
+              <MemberName>{member.name}</MemberName>
+              <MemberInfo>{member.age}歳</MemberInfo>
+              <MemberInfo>{member.position}</MemberInfo>
+            </MemberDetails>
+          </MemberItem>
+        </MemberLink>
       ))}
     </>
   );
