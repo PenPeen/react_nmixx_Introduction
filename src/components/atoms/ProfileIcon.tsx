@@ -1,14 +1,19 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-type Props = { width: number; height: number; image_path?: string };
+type Props = {
+  width: number;
+  height: number;
+  radius?: number;
+  image_path?: string;
+};
 
 const DEFAULT_ICON = '/default_icon.svg';
 
 const Icon = styled.img<Props>`
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
-  border-radius: 50%;
+  border-radius: ${(props) => (props.radius ? props.radius : 0)}%;
   background-color: #ffcccb;
   border: none;
   display: flex;
@@ -27,14 +32,24 @@ const ProfileIcon: React.FC<Props> = ({
   image_path = DEFAULT_ICON,
   height,
   width,
+  radius,
 }) => {
-  return <Icon src={image_path} alt="profile" height={height} width={width} />;
+  return (
+    <Icon
+      src={image_path}
+      alt="profile"
+      height={height}
+      width={width}
+      radius={radius}
+    />
+  );
 };
 
 ProfileIcon.propTypes = {
   image_path: PropTypes.string,
   height: PropTypes.number.isRequired,
   width: PropTypes.number.isRequired,
+  radius: PropTypes.number,
 };
 
 export default ProfileIcon;

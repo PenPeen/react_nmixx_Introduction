@@ -59,6 +59,7 @@ const Members: React.FC = () => {
               image_path={member.profile_img_path}
               width={75}
               height={75}
+              radius={50}
             />
 
             <MemberDetails>
