@@ -4,5 +4,6 @@ export interface Member {
   age: number;
   position: string;
   profile_img_path?: string;
+  main_img_path?: string;
   comment?: string;
 }

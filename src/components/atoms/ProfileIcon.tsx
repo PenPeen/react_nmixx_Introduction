@@ -6,6 +6,7 @@ type Props = {
   height: number;
   radius?: number;
   image_path?: string;
+  className?: string;
 };
 
 const DEFAULT_ICON = '/default_icon.svg';
@@ -22,10 +23,6 @@ const Icon = styled.img<Props>`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 `;
 
 const ProfileIcon: React.FC<Props> = ({
@@ -33,6 +30,7 @@ const ProfileIcon: React.FC<Props> = ({
   height,
   width,
   radius,
+  className,
 }) => {
   return (
     <Icon
@@ -41,6 +39,7 @@ const ProfileIcon: React.FC<Props> = ({
       height={height}
       width={width}
       radius={radius}
+      className={className}
     />
   );
 };
@@ -50,6 +49,7 @@ ProfileIcon.propTypes = {
   height: PropTypes.number.isRequired,
   width: PropTypes.number.isRequired,
   radius: PropTypes.number,
+  className: PropTypes.string,
 };
 
 export default ProfileIcon;
