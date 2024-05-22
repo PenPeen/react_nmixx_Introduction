@@ -12,6 +12,10 @@ const BackButton = styled.button`
   font-weight: bold;
   transition: background-color 0.3s;
 
+  position: absolute;
+  top: 50px;
+  left: 400px;
+
   &:hover {
     background-color: #dcdcdc;
   }

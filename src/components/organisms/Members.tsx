@@ -47,6 +47,12 @@ const MemberInfo = styled.div`
   color: #555;
 `;
 
+const MemberIcon = styled(ProfileIcon)`
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
 const Members: React.FC = () => {
   return (
     <>
@@ -55,10 +61,11 @@ const Members: React.FC = () => {
       {members.map((member) => (
         <MemberLink key={member.id} to={`/members/${member.id}`}>
           <MemberItem>
-            <ProfileIcon
+            <MemberIcon
               image_path={member.profile_img_path}
               width={75}
               height={75}
+              radius={50}
             />
 
             <MemberDetails>
