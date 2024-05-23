@@ -3,6 +3,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
+import NotFound from '../templates/NotFound';
+
 import ProfileIcon from '@/components/atoms/ProfileIcon';
 import PrevNextButtonContainer from '@/components/molecules/PrevNextButtonContainer';
 import { members } from '@/data';
@@ -45,9 +47,8 @@ const Member: React.FC = () => {
   const { memberId } = useParams();
   const member = members.find(({ id }) => id === parseInt(memberId!));
 
-  // TODO: 404を発生
   if (!member) {
-    return <div>Member not found</div>;
+    return <NotFound />;
   }
 
   return (
