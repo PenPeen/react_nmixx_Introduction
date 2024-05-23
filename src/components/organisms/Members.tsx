@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import ProfileIcon from '@/components/atoms/ProfileIcon';
-import PrevButton from '@/components/molecules/PrevButton';
+import PrevNextButtonContainer from '@/components/molecules/PrevNextButtonContainer';
 import { members } from '@/data';
 
 const MemberLink = styled(Link)`
@@ -56,7 +56,7 @@ const MemberIcon = styled(ProfileIcon)`
 const Members: React.FC = () => {
   return (
     <>
-      <PrevButton />
+      <PrevNextButtonContainer />
       <Header>members</Header>
       {members.map((member) => (
         <MemberLink key={member.id} to={`/members/${member.id}`}>

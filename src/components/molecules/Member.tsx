@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
 import ProfileIcon from '@/components/atoms/ProfileIcon';
-import PrevButton from '@/components/molecules/PrevButton';
+import PrevNextButtonContainer from '@/components/molecules/PrevNextButtonContainer';
 import { members } from '@/data';
 
 const Container = styled.div`
@@ -52,7 +52,7 @@ const Member: React.FC = () => {
 
   return (
     <Container>
-      <PrevButton />
+      <PrevNextButtonContainer />
       <MemberInfo>
         <ProfileIcon
           image_path={member.main_img_path}
