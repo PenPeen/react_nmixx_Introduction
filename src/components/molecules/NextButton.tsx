@@ -6,7 +6,7 @@ const GoButton = styled.button`
   color: #000;
   border: none;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 10px 10px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
@@ -20,8 +20,8 @@ const GoButton = styled.button`
   }
 
   svg {
-    width: 12px;
-    height: 12px;
+    width: 20px;
+    height: 20px;
   }
 `;
 

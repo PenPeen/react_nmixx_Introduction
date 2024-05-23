@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import HomeButtonComponent from './HomeButton';
 import NextButton from './NextButton';
 import PrevButton from './PrevButton';
 
@@ -13,6 +14,7 @@ const ButtonContainer = styled.div`
 const PrevNextButtonContainer: React.FC = () => {
   return (
     <ButtonContainer>
+      <HomeButtonComponent />
       <PrevButton />
       <NextButton />
     </ButtonContainer>
