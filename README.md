@@ -55,3 +55,11 @@ Atomic Designを用いたコンポーネント管理とする
 ### メンバー一覧ページ
 
 ![メンバー一覧ページ](https://github.com/PenPeen/react_spa_nmixx_Introduction/blob/image/public/members_page.png?raw=true)
+
+### メンバー詳細ページ
+
+![メンバー一覧ページ](https://github.com/PenPeen/react_spa_nmixx_Introduction/blob/image/public/member_page.png?raw=true)
+
+### ４０４ページ
+
+![メンバー一覧ページ](https://github.com/PenPeen/react_spa_nmixx_Introduction/blob/image/public/404_page.png?raw=true)
